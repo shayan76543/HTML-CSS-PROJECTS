@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+body{
+    background:grey;
+}
+.form{
+    width:30rem;
+    background:white;
+    /* margin-top:10rem; */
+    margin-left:10rem;
+    height:auto;
+}
+.registration{
+    text-align:center;
+    padding-top:3rem;
+    margin-bottom:3rem;
+}
+.first_user{
+    margin:2rem auto 0rem;
+    margin-left:1rem;
+}
