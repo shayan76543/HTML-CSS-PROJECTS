@@ -1,24 +1,51 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-body{
-    background:grey;
+
+body {
+    background: grey;
 }
-.form{
-    width:30rem;
-    background:white;
-    /* margin-top:10rem; */
-    margin-left:10rem;
-    height:auto;
+
+.form {
+    width: 30rem;
+    background: white;
+    margin: 50px auto 0px;
+    border-top: 0.4rem solid blue;
+    height:32rem;
+    box-shadow:0px 0px 9px rgba(0, 0, 0.5);
 }
-.registration{
-    text-align:center;
-    padding-top:3rem;
-    margin-bottom:3rem;
+
+.registration {
+    text-align: center;
+    padding:10px;
+
+
 }
-.first_user{
-    margin:2rem auto 0rem;
-    margin-left:1rem;
+
+.first_user {
+    margin: 2rem 2rem 2rem;
+    position:relative;
+    width:90%;
+}
+.check_borrow{
+    margin-top:32px;
+}
+.submit_button{
+    margin-top:2rem;
+}
+.first_user i{
+    /* margin-right:10px; */
+    margin-top:10px;
+    position:absolute;
+    font-size:18px;
+}
+.first{
+    width:45%;
+    padding:8px 0px 8px 40px;
+    margin:5px;
+}
+.icon{
+    margin-right:5px;
 }
