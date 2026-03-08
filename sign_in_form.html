@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign_in_Page</title>
+    <title>Sign-up form</title>
     <link rel="stylesheet" href="sign_in_form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -12,58 +12,49 @@
 </head>
 
 <body>
-
     <div class="form">
-        <form>
-            <div class="registration">
-                <h1>Registration</h1>
-            </div>
-            <div class="first_user">
-                <i class="fa-regular fa-user icon"></i>
-                <input type="Text" placeholder="First Name" class="first">
-                <i class="fa-regular fa-user"></i>
-                <input type="Text" placeholder="Last Name" class="first">
-            </div>
-            <div class="first_user">
-                <i class="fa-regular fa-envelope"></i>
-                <input type="email" placeholder="Entere your Email">
-            </div>
-            <div class="first_user">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" placeholder="Enter your password">
-            </div>
-            <div class="first_user">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" placeholder="Confirm Password">
-            </div>
-            <div class="radio_box first_user">
-                <input type="radio" name="radio_button">
-                <label>Male</label>
-                <input type="radio" name="radio_button">
-                <label>Female</label>
-            </div>
-            <div class="select_bar first_user">
-                <select>
-                    <option>Pakistan</option>
-                    <option>Aus</option>
-                    <option>New</option>
-                    <option>India</option>
-                    <option>Eng</option>
-                    <option>Afg</option>
-                    <option>Amarica</option>
-                </select>
-                <div class="arrow"></div>
-                <div class="check_borrow ">
-                    <input type="checkbox">
-                    I Accept your Term and condition
-                </div>
-                <div class="submit_button ">
-                    <input type="submit" value="Register">
-                </div>
-            </div>
-        </form>
+        <div class="registration">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="first_name user">
+            <i class="fa-solid fa-user-tie"></i>
+            <input type="text" placeholder="First Name">
+        </div>
+        <div class="last_name user">
+            <i class="fa-solid fa-user-tie"></i>
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="email user">
+            <i class="fa-solid fa-envelope-open"></i>
+            <input type="email" placeholder="Entere Your Email">
+        </div>
+        <div class="password user">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Entere Password">
+        </div>
+        <div class="select_option user">
+            <select>
+                <option>Peshawar</option>
+                <option>Islamabad</option>
+                <option>Karachi</option>
+                <option>Lahore</option>
+                <option>Queta</option>
+                <option>united Punjab</option>
+                <option>Pindi</option>
+            </select>
+        </div>
+        <div class="radio_button ">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+        <div class="check_box">
+            <input type="checkbox"> I Agree with term and condition
+        </div>
+        <div class="register_button user">
+            <input type="button" value="Register">
+        </div>
     </div>
-    </div>
+
 </body>
 
 </html>
