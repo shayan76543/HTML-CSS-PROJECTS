@@ -42,19 +42,53 @@ body{
     width:90%;
     height:2rem;
     padding-left:40px;
+    border:1px solid #CCCCCC;
+    outline: none ;
 }
 .register_button{
     text-align: center;
 }
-.register_button input{
+/* .register_button input{
     background:blue;
     color:white;
     border:none;    
-}
+} */
 .check_box{
     margin-top:1.5rem;
     margin-left:1rem;
+    cursor:pointer;
 }
 .radio_button{
     margin-top:1rem;
+}
+.register_button input {
+    margin-top:1rem;
+    background: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem 9rem;
+    cursor: pointer;
+    border-radius: 5px;
+
+}   
+.register_button input:hover{
+    background-color:green;
+}
+.user :hover{
+    background-color: aqua;
+}
+.select_option select{
+    display:inline-block;
+    width:90%;
+    height:30px;
+    padding:0rem 0.6rem;
+    border:1px solid #CCCCCC;
+    color: #7b7b7b;
+    appearance:none;
+    outline:none;
+}
+.select_option select:hover{
+    color:blue;
+    background-color:#CCCCCC;
+
 }
