@@ -1,68 +1,79 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-body{
-    background:rgb(196, 186, 186);
+
+body {
+    background: rgb(196, 186, 186);
 }
-.form{
+
+.form {
     /* margin-left:30rem;
     margin-top:7rem; */
-    margin:7rem auto;
-    background:white;
-    width:24rem;
-    height:35.7rem;
-    border-top:0.3rem solid blue;
-    box-shadow:0px 0px 10px;
-    
-}
-.registration{
-    padding:2rem;
-}
-.user{
-    padding:1rem;
-    position:relative;
-    
-}
-.user i{
-    position:absolute;
-    left:20px;
-    top:50%;
-    transform:translateY(-50%);
-    border-right:1px solid #CCCCCC;
-    font-size:18px;
-    width:2rem;
+    margin: 7rem auto;
+    background: white;
+    width: 24rem;
+    height: 35.7rem;
+    border-top: 0.3rem solid blue;
+    box-shadow: 0px 0px 10px;
 
 }
-.radio_button{
-    margin-left:1rem;
+
+.registration {
+    padding: 2rem;
 }
-.user input{
-    width:90%;
-    height:2rem;
-    padding-left:40px;
-    border:1px solid #CCCCCC;
-    outline: none ;
+
+.user {
+    padding: 1rem;
+    position: relative;
+
 }
-.register_button{
+
+.user i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 1px solid #CCCCCC;
+    font-size: 18px;
+    width: 2rem;
+
+}
+
+.radio_button {
+    margin-left: 1rem;
+}
+
+.user input {
+    width: 90%;
+    height: 2rem;
+    padding-left: 40px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+}
+
+.register_button {
     text-align: center;
 }
+
 /* .register_button input{
     background:blue;
     color:white;
     border:none;    
 } */
-.check_box{
-    margin-top:1.5rem;
-    margin-left:1rem;
-    cursor:pointer;
+.check_box {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
 }
-.radio_button{
-    margin-top:1rem;
+
+.radio_button {
+    margin-top: 1rem;
 }
+
 .register_button input {
-    margin-top:1rem;
+    margin-top: 1rem;
     background: blue;
     color: white;
     border: none;
@@ -70,25 +81,105 @@ body{
     cursor: pointer;
     border-radius: 5px;
 
-}   
-.register_button input:hover{
-    background-color:green;
 }
-.user :hover{
+
+.register_button input:hover {
+    background-color: green;
+}
+
+.user :hover {
     background-color: aqua;
 }
-.select_option select{
-    display:inline-block;
-    width:90%;
-    height:30px;
-    padding:0rem 0.6rem;
-    border:1px solid #CCCCCC;
-    color: #7b7b7b;
-    appearance:none;
-    outline:none;
-}
-.select_option select:hover{
-    color:blue;
-    background-color:#CCCCCC;
 
+.select_option select {
+    display: inline-block;
+    width: 90%;
+    height: 30px;
+    padding: 0rem 0.6rem;
+    border: 1px solid #CCCCCC;
+    color: #7b7b7b;
+    appearance: none;
+    outline: none;
+}
+
+.select_option select:hover {
+    color: blue;
+    background-color: #CCCCCC;
+
+}
+
+.arrow {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 57px;
+    width: 0px;
+    height: 0px;
+    pointer-events: none;
+    border-width: 6px 5px 0px 6px;
+    border-style: double;
+    border-color: #7b7b7b transparent transparent;
+}
+
+.check{
+    margin-left:4px;
+    position:relative;
+}
+.check::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: -1px;
+    border: 1px solid #7b7b7b;
+    padding: 2px;
+    background-color: transparent;
+
+}
+
+.check::after {
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display:none;
+}
+.check_1box{
+    border:0;
+    height:1px;
+    margin:-8px;
+    clip:rect(0 0 0 0);
+    position:absolute;
+    padding:0px;
+    width:1px;
+}
+.check_1box:hover + .check::before{
+    border-color:#000;
+}
+.check_1box:checked +.check::before{
+    border-color:green;
+}
+.check_1box:checked +.check::after{
+    -webkit-animation : check 0.8s ease 0s running;
+    animation:check 0.8s ease 0s running;
+    display:block;
+    width:7px;
+    height:20px;
+    border-color:green;
+}
+@-webkit-keyframes check{
+    0%{height:0; width:0;}
+    25%{height:0; width:7px;}
+    50%{height:20px; width:7px;} 
+}
+@keyframes check{
+    0%{height:0; width:0;}
+    25%{height:0; width:7px;}
+    50%{height:20px; width:7px;} 
 }
