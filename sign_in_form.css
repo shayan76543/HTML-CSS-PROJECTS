@@ -11,7 +11,7 @@ body {
 .form {
     /* margin-left:30rem;
     margin-top:7rem; */
-    margin: 7rem auto;
+    margin: 1rem auto;
     background: white;
     width: 24rem;
     height: 35.7rem;
@@ -21,7 +21,8 @@ body {
 }
 
 .registration {
-    padding: 2rem;
+    padding: 1.5rem;
+    padding-left:1rem;
 }
 
 .user {
@@ -73,13 +74,15 @@ body {
 }
 
 .register_button input {
-    margin-top: 1rem;
+    margin-top: 1.6rem;
     background: blue;
     color: white;
     border: none;
-    padding: 0.5rem 9rem;
+    padding: 0.5rem;
+    width:90%;
     cursor: pointer;
     border-radius: 5px;
+
 
 }
 
@@ -110,20 +113,22 @@ body {
 
 .arrow {
     position: absolute;
-    top: calc(50% - 4px);
+    top: 50%;
+    transform: translateY(-50%);
     right: 57px;
     width: 0px;
     height: 0px;
     pointer-events: none;
-    border-width: 6px 5px 0px 6px;
-    border-style: double;
+    border-width: 6px 5px 0px 5px;
+    border-style: solid;
     border-color: #7b7b7b transparent transparent;
 }
 
-.check{
-    margin-left:4px;
-    position:relative;
+.check {
+    margin-left: 4px;
+    position: relative;
 }
+
 .check::before {
     content: "";
     display: inline-block;
@@ -142,44 +147,89 @@ body {
     border-top: 2px solid black;
     content: "";
     height: 20px;
-    left: 2px;
+    left: 1px;
     position: absolute;
     top: 7px;
     transform: scaleX(-1) rotate(135deg);
     transform-origin: left top;
     width: 7px;
-    display:none;
+    display: none;
 }
-.check_1box{
-    border:0;
-    height:1px;
-    margin:-8px;
-    clip:rect(0 0 0 0);
-    position:absolute;
-    padding:0px;
-    width:1px;
+
+.check_1box {
+    border: 0;
+    height: 1px;
+    margin: -8px;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    padding: 0px;
+    width: 1px;
 }
-.check_1box:hover + .check::before{
-    border-color:#000;
+
+.check_1box:hover+.check::before {
+    border-color: #000;
 }
-.check_1box:checked +.check::before{
-    border-color:green;
+
+.check_1box:checked+.check::before {
+    border-color: green;
 }
-.check_1box:checked +.check::after{
-    -webkit-animation : check 0.8s ease 0s running;
-    animation:check 0.8s ease 0s running;
-    display:block;
-    width:7px;
-    height:20px;
-    border-color:green;
+
+.check_1box:checked+.check::after {
+    -webkit-animation: check 0.8s ease 0s running;
+    animation: check 0.8s ease 0s running;
+    display: block;
+    width: 7px;
+    height: 20px;
+    border-color: green;
 }
-@-webkit-keyframes check{
-    0%{height:0; width:0;}
-    25%{height:0; width:7px;}
-    50%{height:20px; width:7px;} 
+
+@-webkit-keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+
+    25% {
+        height: 0;
+        width: 7px;
+    }
+
+    50% {
+        height: 20px;
+        width: 7px;
+    }
 }
-@keyframes check{
-    0%{height:0; width:0;}
-    25%{height:0; width:7px;}
-    50%{height:20px; width:7px;} 
+
+@keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+
+    25% {
+        height: 0;
+        width: 7px;
+    }
+
+    50% {
+        height: 20px;
+        width: 7px;
+    }
+} 
+@media (max-width:480px){
+    .form{
+        width:95%;
+    }
+}
+@media (max-width:307px){
+    .register_button input{
+        margin-top:0.9rem;
+        width:70%;  
+    }
+    .user{
+        padding: 6%;
+    }
+    .registration{
+        padding:1rem;
+    }
 }
