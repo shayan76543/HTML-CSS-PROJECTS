@@ -1,0 +1,32 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu_bar{
+    width:330px;
+    background-color:rgb(209, 107, 23);
+    margin:5rem auto;
+    height:20rem;
+    
+}
+h1{
+   text-align: center;
+   color:white; 
+}
+nav{
+    margin-top:1rem;
+    margin-left:1rem;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size:smaller;
+}
+.body{
+    background-color:grey;
+}
+ul{
+    list-style-type: none;
+}
