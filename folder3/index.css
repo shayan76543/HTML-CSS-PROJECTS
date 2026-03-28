@@ -5,13 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: white;
-}
-
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -19,11 +12,16 @@ nav {
     border-bottom: 1px solid #ccc;
     height: 4rem;
     gap: 20px;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     background: white;
     z-index: 1000;
     /* overflow:hidden; */
+}
+header{
+    position: sticky;
+    top:0px;
+    z-index:1000;
 }
 
 .logo h1 {
@@ -138,42 +136,94 @@ nav {
 .image:hover {
     transform: scale(1.2);
 }
-.hero{
-    position:relative;  
-    display:flex;
-    justify-content:center;
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height:30rem;
-    overflow:hidden;
+    height: 30rem;
+    /* overflow: hidden; */
 }
-.hero_image{
-        position:absolute;
-        background-image: url("food.png");
-        background-size:cover;
-        top:0;
-        left:0;
-        height:100%;
-        width:100%;
-        z-index:-1;
-        filter:blur(6px);
-        /* transform:scale(1.1); */
+
+.hero_image {
+    position: absolute;
+    background-image: url("food.png");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(6px);
+    /* transform:scale(1.1); */
 }
-.hero_content{
-    font-size:2rem;
+
+.hero_content {
+    font-size: 2rem;
 }
-.hero_content h1{
+
+.hero_content h1 {
+    color: white;
+}
+
+.span_tag {
+    color: green;
+}
+
+.text {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 40px;
+}
+
+.text p {
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+}
+
+.features img {
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+}
+.feature_section{
+    padding:20px 3%;
+}
+.feature{
+    display:flex;
+    margin-top:30px;
+    align-items: center;
+    gap:20px;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.content p{
+    color:#555;
+}
+
+.feature img {
+    border-radius: 2rem;
+}
+.reverse{
+    display:flex;
+    flex-direction:row-reverse;
+}
+button{
+    width:10rem;
+    height:2rem;
+    border-radius:1rem;
+    background:red;
     color:white;
+    border:none;
+    font-size:1rem;
+    font-weight:bold;
+    cursor: pointer;
 }
-.span_tag{
-    color:green;
-}
-.text h1{
-    text-align: center;
-}
-.text p{
-    text-align: center;
-}
-.features img{
-    border-radius:2rem;
-    padding-left:1.5rem;
-}
+
