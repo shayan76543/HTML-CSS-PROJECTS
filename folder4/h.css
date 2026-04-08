@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  background: #b5ccce;
+  min-height: 100vh;
+  width: 100%;
+  border: 6px solid rgb(14, 14, 58);
+  display: flex;
+  justify-content: center; 
+}
+
+/* Content */
+.content {
+  max-width: 1700px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Image */
+.image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Name */
+.name_tag h1 {
+  font-size: 2.5rem;
+}
+
+.name_tag h5 {
+  font-size: 1.2rem;
+  text-align: right;
+  color: #333;
+}
+
+/* About Section */
+.about_section {
+  margin-top: 30px;
+}
+
+.about_section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about_section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Biography */
+.biography_section {
+  margin-top: 30px;
+}
+
+.biography_section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.biography_section ul {
+  padding-left: 20px;
+  line-height: 1.8;
+} 
+
+/* Footer */
+footer {
+  margin-top: 40px;
+}
+
+footer p {
+  text-align: right;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .name_tag h5 {
+    text-align: center;
+  }
+
+  .image img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .name_tag h1 {
+    font-size: 2rem;
+  }
+}
+
+/* 📱 EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .content {
+    padding: 15px;
+  }
+
+  .name_tag h1 {
+    font-size: 1.6rem;
+  }
+
+  .about_section h2,
+  .biography_section h2 {
+    font-size: 1.5rem;
+  }
+}
