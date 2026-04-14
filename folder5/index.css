@@ -1,0 +1,205 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.tag {
+    text-align: center;
+    font-weight: 700;
+}
+
+.form {
+    height: 630px;
+    width: 700px;
+    margin: 0px auto;
+    margin-top: 2rem;
+    border: 2px solid #A9A9A9;
+    background: white;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.main {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.username {
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 20x solid black;
+}
+
+.username input {
+    height: 50px;
+    width: 300px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid black;
+    font-size:1rem;
+
+}
+
+.last-name {
+    padding-left: 90px;
+}
+
+.first_name label,
+.last_name label {
+    display: block;
+    padding-bottom: 0.5rem;
+    font-weight: 550;
+    font-size: 0.9rem;
+}
+
+.email_job {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    margin-left: 30px;
+
+}
+.email_job label{
+    display:block;
+    font-weight:550;
+    font-size:0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+.email_job input {
+    display: block;
+    height: 50px;
+    width: 300px;
+    padding-left: 5px;
+    border:0.5px solid black;
+    outline:none;
+    font-size:1rem;
+}
+.job-option{
+    height:9rem;
+}
+.job_role select{
+    width:300px;
+    height:50px;
+    outline:none;
+    border:1px solid black;
+    font-size:1rem;
+}
+.address_bar input{
+    display:block;
+    height:90px;
+    width:620px;
+    outline:none;
+    border:0.1px solid black;
+}
+.address_bar label{
+    display:block;
+}
+.address_bar {
+    margin-left: 30px;
+    margin-top:20px;
+    
+}
+.city-pincode{
+    display:flex;
+    gap:20px;
+    
+}
+.city label{
+    margin-bottom:5px;
+    font-family: arial;
+    font-weight:550;
+}
+.city label,input{
+    display:block;
+}
+.city{
+    margin-left:30px;
+    margin-top:20px;
+}
+.city input{
+    height:50px;
+    width:300px;
+    padding-left:10px;
+    font-size:1rem;
+    border:1px solid black;
+}
+.pincode label{
+    margin-bottom:5px;
+    font-family: arial;
+    font-weight: 550;
+}
+.pincode label,input{
+    display:block;
+}
+.pincode{
+    margin-top:20px;
+}
+.pincode input{
+    height:50px;
+    width:300px;
+    font-size:1rem;
+    padding-left:10px;
+    border:1px solid black;
+}
+.start-doc{
+    display:flex;
+    gap:20px;
+}
+.start_date{
+    margin-left:30px;
+    margin-top:20px;
+}
+.start_date input{
+    height:50px;
+    width:300px;
+    border:1px solid black;
+    padding-left:12px;
+    font-size:1rem;
+}
+.start_date label{
+    display:flex;
+    margin-bottom: 8px;
+    font-weight: 550;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.upload_cv{
+    margin-top:20px;
+}
+
+input[type="file"] {
+    width:300px;
+    height:50px;
+    border:1px solid black;
+    padding:15px;
+}
+.upload_cv label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:550 ;
+    font-family:arial;
+}
+.button{
+    margin-top:25px;
+    margin-left:36rem;
+
+}
+.button button{
+    background:red;
+    color:white;
+    border:none;
+    height:40px;
+    width:80px;
+    border-radius:1rem;
+    cursor: pointer;
+}
