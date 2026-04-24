@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    border: 20x solid black;
+ 
 }
 
 .username input {
@@ -120,7 +120,7 @@ body {
     font-family: arial;
     font-weight:550;
 }
-.city label,input{
+.city label,.city input{
     display:block;
 }
 .city{
@@ -190,8 +190,10 @@ input[type="file"] {
     font-family:arial;
 }
 .button{
-    margin-top:25px;
-    margin-left:36rem;
+    display:flex;
+    justify-content: end;
+    padding-right:30px;
+    padding-top:30px;
 
 }
 .button button{
