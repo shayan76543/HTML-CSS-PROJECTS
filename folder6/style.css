@@ -16,7 +16,7 @@ body {
     background-image: url("hero.avif");
     background-size: cover;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .text {
@@ -40,7 +40,7 @@ body {
 /* Black box */
 .black_box {
     height: 180px;
-    width: 100vw;
+    width: 100%;
     background-color: black;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .card:hover {
     transform: scale(1.09);
-    transition: transform 2s ease-in-out;
+    /* transition: transform 2s ease-in-out; */
 }
 
 .image_tag img {
@@ -108,17 +108,14 @@ body {
     background: #515603;
 
 }
-
 .contact_content {
     color: white;
     padding: 30px;
     font-weight: 300;
 }
-
 .about_content {
     color: white;
 }
-
 .about {
     height: 270px;
     width: 50%;
@@ -151,33 +148,85 @@ footer h2{
     font-weight:500;
     
 }
-@media (max-width:790px) and (min-width:659){
-    .contact{
-        height:350px;
-        background: #515603;
+
+@media (max-width: 878px){
+    .contact {
+        flex-direction: column;
     }
-    .about{
+
+    .contacts,
+    .about {
+        width: 100%;
         height:350px;
-        background:#722300;
     }
 }
-@media (max-width:658px) and (min-width:430px){
-    .contact{
-        height:600px;
-        background: #515603;
+
+@media (max-width: 350px) {
+
+    /* Hero section text */
+    .text {
+        font-size: 1.5rem;
+        padding-top: 2rem;
     }
-    .about{
-        height:600px;
-        background:#722300;
+
+    .text h2 {
+        font-size: 1.8rem;
     }
-}
-@media (max-width:430px) and (min-width:200px){
-    .contact{
-        height:1000px;
-        background: #515603;
+
+    .text span {
+        font-size: 1.2rem;
     }
-    .about{
-        height:1000px;
-        background:#722300;
+
+    /* Black box */
+    .black_box {
+        height: auto;
+        padding: 20px;
+    }
+
+    .black_box h1 {
+        font-size: 1.5rem;
+    }
+
+    .black_box span {
+        font-size: 2rem;
+    }
+
+    /* Cards */
+    .work {
+        grid-template-columns: 1fr; /* 1 card per row */
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image_tag img {
+        height: 150px;
+    }
+
+    /* Contact section */
+    .contacts,
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact_content,
+    .about_content {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    footer h2 {
+        font-size: 1rem;
+        padding-top: 0;
     }
 }
